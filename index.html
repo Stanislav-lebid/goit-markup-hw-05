@@ -33,7 +33,7 @@
           <nav>
             <ul class="nav-list">
               <li class="margin-on-header">
-                <a class="link" href="./index.html">Студія</a>
+                <a class="link" href="./index.html"><span class="current">Студія</span></a>
               </li>
               <li class="margin-on-header">
                 <a class="link" href="./portfolio.html">Портфоліо</a>
@@ -73,57 +73,61 @@
       <section class="hero">
         <div class="container container-details">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button flex-box" type="button">Замовити послугу</button>
+          <button class="hero-button flex-box" type="button"  data-modal-open > 
+            Замовити послугу
+          </button>
         </div>
       </section>
+      <!-- Модальне вікно -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-icon-button" data-modal-close type="button"> 
+            <svg class="modal-icon-close">
+              <use href="./images/SVG/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!-- Наші переваги -->
       <section class="container-default-padding">
         <div class="container">
           <h2 hidden class="visually-hidden">Наші переваги</h2>
           <ul class="list-benefits flex-box">
             <li class="margin-on-list width-list">
-              <!-- <div class="flex-icon-benefits"> -->
-                <div class="icons-our-benefits">
-                  <svg class="icon-benefits">
-                    <use href="./images/SVG/sprite.svg#icon-antenna"></use>
-                  </svg>
-                </div>
-                <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="subtitle-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-              <!-- </div> -->
+              <div class="icons-our-benefits">
+                <svg class="icon-benefits">
+                  <use href="./images/SVG/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="subtitle-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li class="margin-on-list width-list">
-              <!-- <div class="flex-icon-benefits"> -->
-                <div class="icons-our-benefits">
-                  <svg class="icon-benefits">
-                    <use href="./images/SVG/sprite.svg#icon-clock"></use>
-                  </svg>
-                </div>
-                <h3 class="subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="subtitle-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-              <!-- </div> -->
+              <div class="icons-our-benefits">
+                <svg class="icon-benefits">
+                  <use href="./images/SVG/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="subtitle-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
             <li class="margin-on-list width-list">
-              <!-- <div class="flex-icon-benefits"> -->
-                <div class="icons-our-benefits">
-                  <svg class="icon-benefits">
-                    <use href="./images/SVG/sprite.svg#icon-diagram"></use>
-                  </svg>
-                </div>
-                <h3 class="subtitle">ПЛАНУВАННЯ</h3>
-                <p class="subtitle-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-              <!-- </div> -->
+              <div class="icons-our-benefits">
+                <svg class="icon-benefits">
+                  <use href="./images/SVG/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">ПЛАНУВАННЯ</h3>
+              <p class="subtitle-text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="width-list">
-              <!-- <div class="flex-icon-benefits"> -->
-                <div class="icons-our-benefits">
-                  <svg class="icon-benefits">
-                    <use href="./images/SVG/sprite.svg#icon-astronaut"></use>
-                  </svg>
-                </div>
-                <h3 class="subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="subtitle-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-              <!-- </div> -->
+              <div class="icons-our-benefits">
+                <svg class="icon-benefits">
+                  <use href="./images/SVG/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="subtitle-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
           </ul>
         </div>
@@ -133,26 +137,35 @@
         <div class="container">
           <h2 class="title-main">Чим ми займаємося</h2>
           <ul class="flex-box">
-            <li>
+            <li class="what-we-do-list">
               <img
                 src="./images/JPG/Photo_1.jpg"
                 width="370"
-                alt="друк коду руками на клавиатурі"
+                alt="Писання коду"
               />
+              <div class="what-we-do-overlay">
+                <p class="what-we-do-overlay-text">Десктопні додатки</p>
+              </div>
             </li>
-            <li>
+            <li class="what-we-do-list">
               <img
                 src="./images/JPG/Photo_2.jpg"
                 width="370"
-                alt="порівняння форми гаджета з фото на ноутбуці"
+                alt="Порівняння форми гаджета с формою моделі на ноуті"
               />
+              <div class="what-we-do-overlay">
+                <p class="what-we-do-overlay-text">Мобільні додатки</p>
+              </div>
             </li>
-            <li>
+            <li class="what-we-do-list">
               <img
                 src="./images/JPG/Photo_3.jpg"
                 width="370"
-                alt="Вибір кольору"
+                alt="Вибір гами колорів"
               />
+              <div class="what-we-do-overlay">
+                <p class="what-we-do-overlay-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -392,62 +405,50 @@
           <ul class="flex-box icon-clients">
             <li class="always-clients-list">
               <a class="link-clients-box" href="#">
-                <!-- <div class="always-client-box"> -->
-                  <svg class="icon-always-client">
-                    <use href="./images/SVG/sprite.svg#icon-logo-yaandco"></use>
-                  </svg>
-                <!-- </div> -->
+                <svg class="icon-always-client">
+                  <use href="images/SVG/sprite.svg#icon-logo-yaandco"></use>
+                </svg>
               </a>
             </li>
             <li class="always-clients-list">
               <a class="link-clients-box" href="#">
-                <!-- <div class="always-client-box"> -->
-                  <svg class="icon-always-client">
-                    <use
-                      href="./images/SVG/sprite.svg#icon-logo-company-tagline"
-                    ></use>
-                  </svg>
-                <!-- </div> -->
+                <svg class="icon-always-client">
+                  <use
+                    href="images/SVG/sprite.svg#icon-logo-company-tagline"
+                  ></use>
+                </svg>
               </a>
             </li>
             <li class="always-clients-list">
               <a class="link-clients-box" href="#">
-                <!-- <div class="always-client-box"> -->
-                  <svg class="icon-always-client">
-                    <use href="./images/SVG/sprite.svg#icon-logo-company"></use>
-                  </svg>
-                <!-- </div> -->
+                <svg class="icon-always-client">
+                  <use href="images/SVG/sprite.svg#icon-logo-company"></use>
+                </svg>
               </a>
             </li>
             <li class="always-clients-list">
               <a class="link-clients-box" href="#">
-                <!-- <div class="always-client-box"> -->
-                  <svg class="icon-always-client">
-                    <use
-                      href="./images/SVG/sprite.svg#icon-logo-foster-peters"
-                    ></use>
-                  </svg>
-                <!-- </div> -->
+                <svg class="icon-always-client">
+                  <use
+                    href="images/SVG/sprite.svg#icon-logo-foster-peters"
+                  ></use>
+                </svg>
               </a>
             </li>
             <li class="always-clients-list">
               <a class="link-clients-box" href="#">
-                <!-- <div class="always-client-box"> -->
-                  <svg class="icon-always-client">
-                    <use href="./images/SVG/sprite.svg#icon-logo-brand"></use>
-                  </svg>
-                <!-- </div> -->
+                <svg class="icon-always-client">
+                  <use href="images/SVG/sprite.svg#icon-logo-brand"></use>
+                </svg>
               </a>
             </li>
             <li class="always-clients-list">
               <a class="link-clients-box" href="#">
-                <!-- <div class="always-client-box"> -->
-                  <svg class="icon-always-client">
-                    <use
-                      href="./images/SVG/sprite.svg#icon-logo-company-tag-line"
-                    ></use>
-                  </svg>
-                <!-- </div> -->
+                <svg class="icon-always-client">
+                  <use
+                    href="images/SVG/sprite.svg#icon-logo-company-tag-line"
+                  ></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -459,22 +460,16 @@
       <div class="container flex-box">
         <div>
           <!-- Логотип -->
-          <a class="logo" href="./index.html">
-            <img src="./images/SVG/WebStudio_Footer.svg" alt="Лого підвалу">
-          </a>
+            <a class="logo" href="/index.html">
+              <img src="./images/SVG/WebStudio_Footer.svg" alt="Лого у футері">
+            </a>
           <!-- Адрес -->
           <address class="footer-address">
             <p class="text-address margin-on-footer">
               м. Київ, пр-т Лесі Українки, 26
             </p>
-            <a
-              class="link-address margin-on-footer"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="link-address" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="link-address margin-on-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link-address" href="tel:+380961111111">+38 096 111 11 11</a>
           </address>
         </div>
         <section class="footer-join">
@@ -483,28 +478,28 @@
             <li>
               <a class="footer-link" href="#">
                 <svg class="footer-link-icon">
-                  <use href="./images/SVG/sprite.svg#icon-instagram"></use>
+                  <use href="images/SVG/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="footer-link" href="#">
                 <svg class="footer-link-icon">
-                  <use href="./images/SVG/sprite.svg#icon-twitter"></use>
+                  <use href="images/SVG/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="footer-link" href="#">
                 <svg class="footer-link-icon">
-                  <use href="./images/SVG/sprite.svg#icon-facebook"></use>
+                  <use href="images/SVG/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="footer-link" href="#">
                 <svg class="footer-link-icon">
-                  <use href="./images/SVG/sprite.svg#icon-linkedin"></use>
+                  <use href="images/SVG/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -512,5 +507,6 @@
         </section>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
